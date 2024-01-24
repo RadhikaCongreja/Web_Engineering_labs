@@ -1,0 +1,36 @@
+  
+  .Table-style {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Table-style th, .Table-style td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .Table-style th {
+    background-color: #19cd1f;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  .Table-style td {
+    background-color: #fff;
+    font-size: 1.1em;
+  }
+  
+  .plan-name {
+    font-weight: bold;
+  }
+  
+    img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  

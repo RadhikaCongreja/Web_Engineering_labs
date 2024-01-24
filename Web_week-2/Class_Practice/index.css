@@ -1,0 +1,17 @@
+h2{
+    color: green;
+}
+p{
+    color: blue;
+    font-style: italic;
+}
+h3{
+    color: aqua;
+}
+
+.example {
+    color: red;
+        padding: 20px;
+        margin: 20px;
+        border: solid green;
+}
