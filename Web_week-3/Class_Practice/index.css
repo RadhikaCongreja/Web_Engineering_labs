@@ -1,0 +1,76 @@
+.myButton {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    color: blueviolet;
+}
+.myButton:hover{
+     background-color: black;
+     border-radius: 15px;
+}
+p:hover{
+    
+    text-transform: capitalize;
+}
+span:first-child{
+    color: blue;
+}
+.customName span:first-child{
+    color:red;
+}
+.customName > span:first-child{
+    color:green;
+}
+
+.parent{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color:red;
+}
+.child{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    top: -200px;
+    left: -200px;
+    z-index: -1;
+}
+
+.font{
+    /* visibility: hidden; */
+    font-family: 'Honk', system-ui;
+}
+
+div span{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    display: block;
+}
+.container{
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50px;
+
+}
+.inner{
+    background-color: blueviolet;
+    margin: 10px;
+    border-radius: 50px;
+    display: inline;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+.flexcontainer{
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    flex-direction: row-reverse;
+    height: 100ch;
+}

@@ -1,0 +1,60 @@
+.main-container {
+    background-color: rgb(242, 170, 170);
+    width: 80%;
+    height: auto;
+    margin:auto;
+    padding: 30px;
+}
+header{
+    display: flex;
+    margin: 0px auto 30px auto;
+    background-color: rgb(144, 232, 238);
+    height: 100px;
+    width: 80%;
+    justify-content: center;
+}
+h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:xx-large;
+    margin: auto;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+aside{
+    display:flex;
+    background-color: rgb(41, 167, 176);
+    height: 600px;
+    width: 20%;
+    justify-content: center;
+}
+article{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(245, 78, 106);
+    width: 60%;
+    flex-direction: column;
+}
+
+.img{
+    display: flex;
+    background-color: rgb(159, 155, 155);
+    margin: 10px;
+    height: 200px;
+    width: 250px;
+    justify-content: center;
+}
+.images{
+    display:flex;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    margin: 30px auto 0 auto;
+    background-color:rgb(94, 216, 225);
+    height: 100px;
+    width: 80%;
+    justify-content: center;
+}
