@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <h1>Number Guessing Game</h1>
+    <div class="container">
+        <h2>Guess a number between 1 and 100:</h2>
+        <input type="text" id="Input">
+        <button id="btn">Enter</button>
+        <button id="btn2">Clear</button>
+        <p id="message"></p>
+    </div>
+
+
+    <script>
+        const btn = document.getElementById('btn');
+        const btn2 = document.getElementById('btn2');
+        const guessInput = document.getElementById("Input");
+
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+        function checkGuess() {
+            
+            const userGuess = parseInt(guessInput.value);
+            const messageElement = document.getElementById("message");
+
+            if (userGuess === randomNumber) {
+                messageElement.textContent = "Congratulations! You guessed the correct number!";
+            } else if (userGuess < randomNumber) {
+                messageElement.textContent = "Too low! Try again.";
+            } else {
+                messageElement.textContent = "Too high! Try again.";
+            }
+        }
+
+        function clearInput() {
+                // Clear the input field
+                document.getElementById("Input").value = "";
+            }
+        btn.onclick = checkGuess;
+        btn2.onclick = clearInput;
+
+    </script>
+</body>
+
+</html>

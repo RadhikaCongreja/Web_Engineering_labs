@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 id="h1"> Heading 1 </h1>
+    <h2 id="h2"> Heading 2 </h2>
+    <p id="p1"> Paragraph 1</p>
+    <p id="p2"> Paragraph 2</p>
+    <button id = "btn">submit</button>
+
+    <div id="container">
+        <!-- <ball class="ball"></ball> -->
+    </div>
+
+    <script>
+        const h1 = document.getElementById( "h1" );
+        h1.style.color = "red";
+        h1.style.backgroundColor = "green";
+
+        const btn = document.getElementById("btn");
+        btn.style.backgroundColor="violet";
+        function buttonPressed(){
+            // alert("hey i am there");
+            // btn.style.backgroundColor ="yellow";
+            const ball=document.createElement('div')
+            ball.className="ball"
+            container.appendChild(ball)
+        }
+        btn.onclick = buttonPressed;
+
+       
+        
+    </script>
+</body>
+</html>
