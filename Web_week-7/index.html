@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <ol id="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+    <p>Paraghraph 1</p>
+    <p>Paraghraph 2</p>
+    <p>Paraghraph 3</p>
+    
+    <div id="myId">
+    <p>Div P1</p>
+    <p>Div P2</p>
+    <p>Div P3</p>
+    <span>Div span </span>
+    </div>
+
+    <script>
+        const mylist = document.getElementById("list")
+        console.log(mylist.innerText);
+        console.log(mylist.innerHTML);
+        console.log(mylist.textContent);
+        console.log(mylist.value);
+        mylist.innerHTML = "<h1>  Heading </h1>"
+
+        const Ptag = document.getElementsByTagName("p");
+        console.log(Ptag);
+
+        Ptag[0].innerText = "Updated Paragraph 1";
+        
+        const divTag = document.getElementById("myId");
+        console.log(divTag.querySelectorAll("#myId > p"));
+        console.log(divTag.querySelector("#myId > p"));
+    </script>
+</body>
+</html>

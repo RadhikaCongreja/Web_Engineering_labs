@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="ToDoList.css">
+</head>
+<body>
+    
+    <h1>To-Do List</h1>
+    <div id="container">   
+        <input type="text" id="taskInput" placeholder="Enter task...">
+        <button id="btn">Add Task</button>
+      <!-- <button id="rem">delete</button> -->
+        <ol id="taskList"></ol>
+    </div>
+    
+
+
+    <script>
+        const btn = document.getElementById("btn");
+        btn.style.backgroundColor = "violet";
+        
+    
+    function addTask() {
+    var taskInput = document.getElementById("taskInput");
+    var taskList = document.getElementById("taskList");
+
+    if (taskInput.value === "") {
+        alert("Please enter a task");
+        return;
+    }
+
+    var li = document.createElement("li");
+    li.textContent = taskInput.value;
+    taskList.appendChild(li);
+
+    taskInput.value = ""; 
+
+    var btn2 = document.createElement("button");
+    btn2.style.backgroundColor = "pink";
+    btn2.style.borderRadius = "50%";
+    btn2.classList.add("removeBtn");
+    btn2.textContent = "Remove";
+    li.appendChild(btn2);
+    btn2.onclick = function () { removeTask(li) };
+}
+
+function removeTask(li) {
+    li.remove();
+}
+btn.addEventListener("click", addTask);
+// btn.onclick = addTask;
+
+    </script>
+</body>
+</html>
