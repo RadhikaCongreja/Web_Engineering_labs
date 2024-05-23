@@ -1,0 +1,29 @@
+.main-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.users-container {
+  padding: 10px;
+  /* height: 100vh; */
+  width: 50%;
+
+  background-color: antiquewhite;
+}
+.posts-container {
+  /* height: 100vh; */
+  padding: 10px;
+  width: 50%;
+  background-color: rgb(199, 199, 199);
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
